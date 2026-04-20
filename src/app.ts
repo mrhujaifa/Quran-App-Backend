@@ -1,9 +1,9 @@
 import express, { Application, Request, Response } from "express";
-import { IndexRoutes } from "./app/routes";
-import { globalErrorHandler } from "./app/middlewares/errors/globalErrorHandler";
-import { notFound } from "./app/middlewares/errors/notFound";
+import { IndexRoutes } from "./app/routes/index.js";
+import { globalErrorHandler } from "./app/middlewares/errors/globalErrorHandler.js";
+import { notFound } from "./app/middlewares/errors/notFound.js";
 import cors from "cors";
-import { envVars } from "./config/env";
+import { envVars } from "./config/env.js";
 
 const app: Application = express();
 

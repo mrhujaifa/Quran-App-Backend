@@ -1,6 +1,6 @@
 import status from "http-status";
-import { envVars } from "../../../config/env";
-import AppError from "../../errors/AppError";
+import { envVars } from "../../../config/env.js";
+import AppError from "../../errors/AppError.js";
 import {
   ICombinedAyah,
   ISurah,
@@ -9,7 +9,7 @@ import {
   TSearchApiResponse,
   TSearchMatch,
   TSearchResult,
-} from "./quran.interface";
+} from "./quran.interface.js";
 
 //* Retrieve all surahs
 const getAllSurahs = async (): Promise<ISurah[]> => {

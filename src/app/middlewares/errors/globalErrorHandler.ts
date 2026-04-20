@@ -3,10 +3,10 @@
 import { NextFunction, Request, Response } from "express";
 import httpStatus from "http-status";
 
-import AppError from "../../errors/AppError";
-import { envVars } from "../../../config/env";
+import AppError from "../../errors/AppError.js";
+import { envVars } from "../../../config/env.js";
 
-import { TErrorResponse, TErrorSources } from "../../types/error.type";
+import { TErrorResponse, TErrorSources } from "../../types/error.type.js";
 
 export const globalErrorHandler = (
   err: any,

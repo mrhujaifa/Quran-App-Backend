@@ -1,7 +1,7 @@
 import status from "http-status";
-import { catchAsync } from "../../shared/catchAsync";
-import { sendResponse } from "../../shared/sendResponse";
-import { QuranServices } from "./quran.service";
+import { catchAsync } from "../../shared/catchAsync.js";
+import { sendResponse } from "../../shared/sendResponse.js";
+import { QuranServices } from "./quran.service.js";
 
 //* Retrieve all surahs
 const getAllSurahs = catchAsync(async (req, res) => {
